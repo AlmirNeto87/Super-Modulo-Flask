@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Abaixo utilizamos variaveis dinamicas que estao vindo das definicoes das rotas sintaxe: {{variavel}} a variavel tem que estar dentro de 2 Parentenses  -->
+    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Minha Empresa</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li><a href="{{ url_for('contatos') }}">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Bem-vindo à nossa página!</h2>
+        <p>Somos uma empresa dedicada a oferecer soluções inovadoras para nossos clientes, com um compromisso sério com a qualidade e o atendimento personalizado.</p>
+        <p>Explore nosso site e descubra mais sobre os nossos serviços e como podemos ajudar o seu negócio a crescer.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-card">
+            <h3>Consultoria Empresarial</h3>
+            <p>Oferecemos consultoria estratégica para melhorar a gestão e aumentar a eficiência da sua empresa.</p>
+        </div>
+        <div class="service-card">
+            <h3>Desenvolvimento de Software</h3>
+            <p>Criamos soluções customizadas para atender às necessidades específicas do seu negócio.</p>
+        </div>
+        <div class="service-card">
+            <h3>Marketing Digital</h3>
+            <p>Desenvolvemos estratégias de marketing digital para aumentar a presença online e atrair mais clientes.</p>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h2>Pronto para dar o próximo passo?</h2>
+        <p>Entre em contato conosco para discutir como podemos ajudar sua empresa a alcançar novos patamares!</p>
+        <a href="{{ url_for('contatos') }}" class="cta-button">Fale Conosco</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
