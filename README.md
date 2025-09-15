@@ -52,16 +52,20 @@ https://github.com/robson400
    cd super-modulo-flask-aula01
    
 2. Crie um ambiente virtual (opcional, mas recomendado):
-  python -m venv venv
-  source venv/bin/activate   # Linux/Mac
-  venv\Scripts\activate      # Windows
+   ```bash
+     python -m venv venv
+     source venv/bin/activate   # Linux/Mac
+     venv\Scripts\activate      # Windows
 
-3. Instale as dependências:
-  pip install flask
+4. Instale as dependências:
+   ```bash
+   pip install flask
 
-4. Execute a aplicação:
-  python app.py
+5. Execute a aplicação:
+   ```bash
+   python app.py
 
-5. Abra no navegador:
+7. Abra no navegador:
+  ```bash
   http://127.0.0.1:5000
 
