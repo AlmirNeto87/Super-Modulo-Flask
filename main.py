@@ -63,7 +63,10 @@ def internal_server_error(e):
     return render_template('error.html', error_code=500, error_message="Erro interno no servidor. Tente novamente mais tarde."), 500
 
 #Funcao para executar o flask 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
+
+    
 # Revisao Python
 # def somar(num1,num2):
 #   soma = num1+num2
